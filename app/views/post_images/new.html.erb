@@ -19,8 +19,7 @@
               <% if @post_image.errors.any? %>
                 <div id="error_explanation">
                   <!-- エラーの件数を表示 -->
-                  <h2><%= @post_image.errors.count %></h2>
-
+                  <h2><%= @post_image.errors.count %>件のエラーが発生しました。</h2>
                   <ul>
                     <!-- エラーの全文表示 -->
                     <% @post_image.errors.full_messages.each do |message| %>
