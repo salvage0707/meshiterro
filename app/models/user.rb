@@ -10,4 +10,6 @@ class User < ApplicationRecord
   has_many :post_comments, dependent: :destroy
   # いいね機能モデル
   has_many :favorites, dependent: :destroy
+
+  attachment :profile_image
 end
